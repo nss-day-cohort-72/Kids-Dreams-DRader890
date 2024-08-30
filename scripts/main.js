@@ -11,7 +11,7 @@ const applicationHTML = `
             <h2>Kids</h2>
             ${Kids()}
         </section>
-        <section class="detail--column details__celebrities">
+        <section class="detail--column details__celebrities" id="celebrityListContainer">
             <h2>Celebrities</h2>
             ${Celebrities()}
         </section>
@@ -19,7 +19,8 @@ const applicationHTML = `
 
     <article class="assignments">
         <h2>Pairings</h2>
-    </article>
+        ${Pairings()}
+        </article>
 `
 
 mainContainer.innerHTML = applicationHTML
